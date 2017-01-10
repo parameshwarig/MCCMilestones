@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<title>Home</title>
+<script>
+function myFunction() {
+    var x = document.forms["myForm"]["fname"].value;
+   if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    var x = document.getElementById("myPsw").value;
+    document.getElementById("demo").innerHTML = x;
+}
+}
+</script>
+<style>
+body {background-color: #6495ED;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6495ED;
+}
+
+li a {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.signin {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+}
+
+
+li a:hover {
+    background-color: #6495ED;
+}
+</style>
+    
+</head>
+
+<header>
+<img src="cclogo2.png" alt="cclogo"></header>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="resource.html">Resource</a></li>
+  <li><a href="events.html">Events</a></li>
+  <li><a href="aboutus.html">Aboutus</a></li>
+<li><a href="contact.html">Countactus</a></li>
+<li><a href="registration.html">Registration</a></li>
+
+<div align="right">
+<form name="myForm" action="demo_form.asp" 
+onsubmit="return validateForm()" method="post">
+Username: <input type="text" name="username">
+Password: <input type="password" id="myPsw" value="">
+<input type="submit" value="Submit">
+</form>
+</div>
+</ul>
+<br><br>
+ <img src="Fiap-paulista-coworking.jpg" alt="Fiap-paulista-coworking" style="width:1004px;height:328px;">
+
+<h1>Our Mission:</h1>
+
+<p>To create a world where people work to make a life, not just a living</p>
+
+
+</body>
+</html>
