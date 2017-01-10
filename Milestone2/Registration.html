@@ -8,6 +8,7 @@
 <title>Home</title>
 <script>
 function validateForm() {
+alert('validates');
     var x = document.forms["myForm"]["fname"].value;
    if (x == "") {
         alert("Name must be filled out");
@@ -81,28 +82,28 @@ li a:hover {
 <form name="myForm" action="demo_form.asp"
 onsubmit="return validateForm()" method="post">
 Full Name:<br>
- <input type="text" name="fname">
+ <input type="text" name="fname" required>
 <br><br>
 Address:<br>
- <input type="text" name="add">
+ <input type="text" name="add" required>
   <br><br>
 City:<br>
- <input type="text" name="city">
+ <input type="text" name="city" required>
 <br><br>
 State:<br>
- <input type="text" name="state">
+ <input type="text" name="state" required>
 <br><br>
 Zip Code:<br>
- <input type="text" name="zcode">
+ <input type="text" name="zcode" required>
 <br><br>
 Country:<br>
- <input type="text" name="country">
+ <input type="text" name="country" required>
 <br><br>
   Email Address:<br>
-  <input type="email" name="email">
+  <input type="email" name="email" required>
 <br><br>
  Phone Number:<br>
-  <input type="text" name="phone">
+  <input type="text" name="phone" required>
 <br><br>
 <p>Suggestion or topics you would like to be included </p>
 
